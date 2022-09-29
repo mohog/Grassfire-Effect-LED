@@ -10,10 +10,10 @@
   By Brice Culas - CosplayEnrichmentCenter
   https://github.com/CosplayEnrichmentCenter/Arduino-FireEffect
 */
-#define FASTLED_FORCE_SOFTWARE_PINS 
+#define FASTLED_FORCE_SOFTWARE_PINS //https://github.com/FastLED/FastLED/issues/1363
 #include <FastLED.h>
 #include <Adafruit_DotStar.h>
-Adafruit_DotStar strip = Adafruit_DotStar(1, INTERNAL_DS_DATA, INTERNAL_DS_CLK, DOTSTAR_BGR);
+Adafruit_DotStar strip = Adafruit_DotStar(1, INTERNAL_DS_DATA, INTERNAL_DS_CLK, DOTSTAR_BGR);//turn off onboard trinket rgb led
 
 /********BASIC SETTINGS********/
 
